@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+	<style>
+
+body{
+	width: 50%;
+}
+form{
+	background-color: rgb(250,250,250);
+}
+input{
+	  
+      border:solid 1px #ccc;
+      border-radius: 5px;
+      
+  }
+fieldset{
+	border-radius: 20px;
+}
+  </style>
+</head>
+<body>
+  <h1>HELLO RWANDA</h1>
+<form action="" method="">
+<div class="container">
+ <fieldset>
+  <legend><b>Personal Info</b></legend><br>
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="fname" placeholder="FirstName"required><br><br>
+  <label for="lname">Last Name</label>
+  <input type="text" id="lname" name="lname" placeholder="LastName"required><br><br>
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" placeholder="email" required><br><br>
+  <label for="birthday">DOB</label>
+  <input type="date" id="birthday" name="birthday"required><br><br>
+  <label for="age">Age</label>
+  <input type="age" size="5" name="age"><br><br>
+  <div id="gender" required>Gender<br>
+        <input type="radio" name="gender" id="male" value="male" >
+        <label for ="male" >Male</label><br>
+        <input type="radio" name="gender" id="female" value="female" >
+        <label for ="female">Female</label><br>
+        <input type="radio" name="gender" id="others">
+        <label for="other ">Other</label>
+    </div><br>
+    <label for="tel" id="tel">Phone</label>
+    <input type="text" name="tel" placeholder="enter 10 numbers" required><br><br>
+
+ </fieldset>
+ <fieldset>
+ 	<legend><b>SKILLS</b></legend>
+
+ 	 <div>Courses</div>
+ 	 <input type="checkbox" name="math" id="math" >
+        <label for ="math" required >Math</label><br>
+        
+        <input type="checkbox" name="economy" id="economy" >
+        <label for ="economy">Economy</label><br>
+
+        <input type="checkbox" name="geography" id="geography" >
+        <label for ="geography">Geography</label>
+        <br><br>
+
+    <div>Languages
+      <select for="languages">
+    	<option name="engl" id="languages">English</option>
+    	<option name="kinya" id="languages">Kinyarwanda</option>
+    	<option name="fre" id="languages">French</option>
+      </select>
+    </div>
+     <br>
+
+    <label for="resume">Resume</label><br>
+    <textarea rows="5" cols="30" placeholder="Enter Description here ..."></textarea><br>
+
+    <label for ="file">CV</label>
+       <form>
+        <input type="file" name="file" id="file"required>
+        </form>
+ </fieldset>
+
+   <br>
+   <button type="submit">submit</button>
+  </div>
+</form>
+
+</body>
+</html>
